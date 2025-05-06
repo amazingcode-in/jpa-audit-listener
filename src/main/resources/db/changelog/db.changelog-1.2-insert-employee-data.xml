@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="3" author="vaibhav">
+        <insert tableName="employees">
+            <column name="first_name" value="John"/>
+            <column name="last_name" value="Doe"/>
+            <column name="email" value="john.doe@example.com"/>
+            <column name="phone_number" value="1234567890"/>
+            <column name="created_by" valueNumeric="1"/>
+            <column name="updated_by" valueNumeric="1"/>
+            <column name="created_on" valueDate="2024-01-01T10:00:00"/>
+            <column name="updated_on" valueDate="2024-01-01T10:00:00"/>
+        </insert>
+
+        <insert tableName="employees">
+            <column name="first_name" value="Jane"/>
+            <column name="last_name" value="Smith"/>
+            <column name="email" value="jane.smith@example.com"/>
+            <column name="phone_number" value="9876543210"/>
+            <column name="created_by" valueNumeric="2"/>
+            <column name="updated_by" valueNumeric="2"/>
+            <column name="created_on" valueDate="2024-01-02T11:30:00"/>
+            <column name="updated_on" valueDate="2024-01-02T11:30:00"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
